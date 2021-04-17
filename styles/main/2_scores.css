@@ -1,0 +1,122 @@
+/* Variables */
+:root {
+  /* Colors*/
+  --primary-color: #f3cf30;
+  --secondary-color: #ed7e31;
+  --buttons-color: #f4f4f4;
+
+  --light-color: #fff;
+  --dark-color: #333;
+
+  --text-color: #222;
+  --icon-color: #515;
+
+  --corrent: #52a04a;
+  --wrong: #b63333;
+
+  /* Sizes*/
+  --questions-text: 1.2rem;
+  --answers-text: 1rem;
+
+  --buttons-large-text: 1.3rem;
+  --buttons-small-text: 1rem;
+
+  --small-text: 0.9rem;
+}
+
+/* Mobile first */
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  /* padding: 30px; */
+  width: calc(100vw - (100vw - 100%));
+  height: 82%;
+  background-color: #f7fff7;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+thead {
+  padding: 20px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4ecdc52c;
+}
+
+thead tr {
+  margin: 8px 0;
+  display: flex;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+th,
+td {
+  width: 25%;
+  text-align: center;
+}
+
+thead tr th:nth-child(1) {
+  text-align: left;
+}
+
+thead tr th:nth-child(4) {
+  text-align: right;
+}
+
+tbody {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+tbody tr {
+  margin: 8px 0;
+  display: flex;
+  width: 100%;
+  font-size: 1em;
+}
+
+tbody tr:nth-child(1) {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #1a535c;
+}
+
+tbody tr td:nth-child(1) {
+  text-align: left;
+}
+
+tbody tr td:nth-child(4) {
+  text-align: right;
+}

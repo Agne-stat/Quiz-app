@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../styles/0_resets.css">
+    <link rel="stylesheet" href="../../styles/1_header.css">
+    <link rel="stylesheet" href="../../styles/2_footer.css">
+    <link rel="stylesheet" href="../../styles/main/quiz/theme1.css">
+
+    <!-- Custom JS -->
+    <script defer src="../../scripts/quiz/theme1.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul class="navigation">
+                <li class="navigation__item"><a href="../../index.html"><i class="fas fa-home"></i>HOME</a></li>
+                <li class="navigation__item"><a href="../1_themes.html"><i class="fas fa-th-large"></i>THEMES</a></li>
+                <li class="navigation__item"><a href="../2_scores.html"><i class="fas fa-trophy"></i>SCORES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="container__text">
+                    <h1>Are you ready?</h1>
+                    <p class="info">Test your knowledge about basic HTML, CSS and JS </p>
+                    <button id="start-btn" class="btn start-btn">START</button>
+                </div>
+                <div class="quiz">
+                    <div id="quiz__question" class="hide">
+                        <div id="question"></div>
+                        <div id="answers-btns">
+                        </div>
+                    </div>
+
+                    <div class="quiz__controls">
+                        <p class="record hide">Congratulations !!! <span> Score record</span></p>
+                        <button id="next-btn" class="btn next-btn hide">Next</button>
+                        <div class="time"></div>
+                        <p id="result" class="hide">aaa</p>
+                        <button id="save-btn" class="btn save-btn hide">Save your score</button>
+
+                        <div class="progress hide">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+
+                        <form id="form" class="form hide">
+                            <div class="name-container">
+                                <label for="text">Enter your name:</label>
+                                <input id="name-input" type="text">
+                            </div>
+                            <div  class="submit-container">
+                                <input class="btn submit-btn" id="submit" type="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; All rights reserved | <span id="current-year"></span></p>
+    </footer>
+</body>
+</html>

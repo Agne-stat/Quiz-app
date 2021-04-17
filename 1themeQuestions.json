@@ -1,0 +1,108 @@
+[
+    {
+      "question": "1. Inside which HTML element do we put the JavaScript?",
+      "answers": [
+        {
+          "text": "<scripting>",
+          "correct": false
+        },
+        {
+          "text": "<javascript>",
+          "correct": false
+        },
+        {
+          "text": "<js>",
+          "correct": false
+        },
+        {
+          "text": "<script>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "2. Inside which HTML element do we put the JavaScript?",
+      "answers": [
+        {
+          "text": "<scripting>",
+          "correct": false
+        },
+        {
+          "text": "<javascript>",
+          "correct": false
+        },
+        {
+          "text": "<js>",
+          "correct": false
+        },
+        {
+          "text": "<script>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "3. Inside which HTML element do we put the JavaScript?",
+      "answers": [
+        {
+          "text": "<scripting>",
+          "correct": false
+        },
+        {
+          "text": "<javascript>",
+          "correct": false
+        },
+        {
+          "text": "<js>",
+          "correct": false
+        },
+        {
+          "text": "<script>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "4. Inside which HTML element do we put the JavaScript?",
+      "answers": [
+        {
+          "text": "<scripting>",
+          "correct": false
+        },
+        {
+          "text": "<javascript>",
+          "correct": false
+        },
+        {
+          "text": "<js>",
+          "correct": false
+        },
+        {
+          "text": "<script>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "5. Inside which HTML element do we put the JavaScript?",
+      "answers": [
+        {
+          "text": "<scripting>",
+          "correct": false
+        },
+        {
+          "text": "<javascript>",
+          "correct": false
+        },
+        {
+          "text": "<js>",
+          "correct": false
+        },
+        {
+          "text": "<script>",
+          "correct": true
+        }
+      ]
+    }
+]
+

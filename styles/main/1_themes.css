@@ -1,0 +1,106 @@
+/* Variables */
+:root {
+  /* Colors*/
+  --primary-color: #f3cf30;
+  --secondary-color: #ed7e31;
+  --buttons-color: #f4f4f4;
+
+  --light-color: #fff;
+  --dark-color: #333;
+
+  --text-color: #222;
+  --icon-color: #515;
+
+  --corrent: #52a04a;
+  --wrong: #b63333;
+
+  /* Sizes*/
+  --questions-text: 1.2rem;
+  --answers-text: 1rem;
+
+  --buttons-large-text: 1.3rem;
+  --buttons-small-text: 1rem;
+
+  --small-text: 0.9rem;
+}
+
+/* Mobile first */
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  /* padding: 30px; */
+  width: calc(100vw - (100vw - 100%));
+  height: 82%;
+  background-color: #f7fff7;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.container__text {
+  height: 10%;
+  align-self: center;
+}
+
+.container__btns {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.theme__btn {
+  width: 50%;
+  height: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: all 1s;
+  opacity: 0.5;
+}
+
+.theme__btn:hover {
+  font-size: 150%;
+  color: #fff;
+  opacity: 1;
+}
+
+#theme1-btn {
+  background-color: #4ecdc4;
+}
+#theme2-btn {
+  background-color: #1a535c;
+}
+#theme3-btn {
+  background-color: #f7fff7;
+}
+
+#theme3-btn:hover {
+  color: #4ecdc4;
+}
+
+#theme4-btn {
+  background-color: #ffe66d;
+}
