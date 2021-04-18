@@ -1,10 +1,4 @@
 // Variables
-// import theme1Btn from '../1_themes'
-// const theme1Btn = document.querySelector('#theme1-btn');
-// const theme2Btn = document.querySelector('#theme2-btn');
-// const theme3Btn = document.querySelector('#theme3-btn');
-// const theme4Btn = document.querySelector('#theme4-btn');
-
 const introText = document.querySelector('.container__text')
 const startBtn = document.querySelector("#start-btn");
 const nextBtn = document.querySelector("#next-btn");
@@ -31,46 +25,19 @@ let scoresArr = [];
 let tableBody = document.querySelector("tbody");
 let usersList2 = JSON.parse(localStorage.getItem("quizScores")) || [];
 
-
-// function shuffle(array) {
-//     var currentIndex = array.length, temporaryValue, randomIndex;
-  
-//     // While there remain elements to shuffle...
-//     while (0 !== currentIndex) {
-  
-//       // Pick a remaining element...
-//       randomIndex = Math.floor(Math.random() * currentIndex);
-//       currentIndex -= 1;
-  
-//       // And swap it with the current element.
-//       temporaryValue = array[currentIndex];
-//       array[currentIndex] = array[randomIndex];
-//       array[randomIndex] = temporaryValue;
-//     }
-  
-//     return array;
-// }
-// console.log(theme1Btn)
-
-// function showTheme1Questions() {
-
-// }
+console.log(questions)
 
 fetch("../../2themeQuestions.json")
 .then((response) => response.json())
 .then((data) => {
     questions.push(...data);
-
-    // questions.push(shuffle(data));
-    // console.log(shuffle(data))
 });
-
-
 
 
 // Functions
 function startGame() {
     showTimer();
+    shuffle(questions);
     introText.classList.add('hide')
     startBtn.classList.add("hide");
     saveBtn.classList.add("hide");
@@ -95,6 +62,25 @@ function startGame() {
         scoresArr.push(usersList2[i].score)
     }
     console.log(Math.max(...scoresArr))
+}
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
 }
 
 
