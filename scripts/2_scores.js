@@ -13,29 +13,44 @@ const scoresTable = document.querySelector(".table-container");
 let questions = [];
 let index;
 let score;
+let newArray = []
 
 let tableBody = document.querySelector("tbody");
 let usersList = JSON.parse(localStorage.getItem("quizScores")) || [];
 
 // Functions
-function showUsers(usersArray, output) {
-    output.innerHTML = usersArray.sort((a,b) => b.score - a.score).map(user => { 
-        return `
-        <tr>
-            <td>${user.name}</td>
-            <td>${user.score}</td>
-            <td>${user.time}</td>
-            <td>${user.theme}</td>
-        </tr>
-        `
-    }).join("");
-};
+showUsers(usersList, tableBody);
 
+function showUsers(usersArray, output) {
+    usersArray.sort((a,b) => {
+        if(a.score === b.score) {
+            var x = a.time,
+              y = b.time;
+              if(x>y){
+                return 1;
+              }else{
+                return -1;
+              }
+          }
+        return b.score-a.score
+    })
+
+    output.innerHTML = usersArray.map(user => {
+        return `
+            <tr>
+                <td>${user.name}</td>
+                <td>${user.score}</td>
+                <td>${user.time}</td>
+                <td>${user.theme}</td>
+            </tr>
+        `
+    }).join("")
+}
 
 
 // footer date
 document.querySelector("#current-year").innerHTML = new Date().getFullYear();
 
 // Events
-showUsers(usersList, tableBody);
+
 
