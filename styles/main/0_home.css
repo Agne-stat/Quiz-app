@@ -55,7 +55,7 @@ main .wrapper {
 }
 
 .start__btn {
-  margin: auto;
+  margin: 0 auto;
   padding: 30px 15px;
   width: 260px;
   height: auto;
