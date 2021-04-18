@@ -24,7 +24,7 @@ const progressBar = document.querySelector('.progress-bar');
 let questions = [];
 let index;
 let score;
-let themeType = 'Theme2';
+let themeType = 'JavaScript';
 let questionNumber;
 let scoresArr = [];
 

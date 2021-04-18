@@ -71,20 +71,20 @@ main {
   height: 50%;
   border: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #000;
   cursor: pointer;
-  font-size: 1.2em;
   transition: all 1s;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .theme__btn:hover {
   font-size: 150%;
-  color: #fff;
-  opacity: 1;
+
+  opacity: 0.6;
 }
 
 #theme1-btn {
@@ -103,4 +103,45 @@ main {
 
 #theme4-btn {
   background-color: #ffe66d;
+}
+
+.theme__info {
+  padding-bottom: 20px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.theme03__info {
+  padding-bottom: 20px;
+  font-size: 1.2em;
+  color: #1a535c;
+}
+
+.theme1__info {
+  padding-top: 20px;
+  font-size: 0.8em;
+  color: #ffe66d;
+}
+.theme2__info {
+  padding-top: 20px;
+  font-size: 0.8em;
+  color: #ffe66d;
+}
+.theme3__info {
+  padding-top: 20px;
+  font-size: 0.8em;
+  color: #1a535c;
+}
+.theme4__info {
+  padding-top: 20px;
+  font-size: 0.8em;
+  color: #1a535c;
+}
+
+.hide {
+  display: none;
+}
+
+.theme__btn:hover .hide {
+  display: flex;
 }

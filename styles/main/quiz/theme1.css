@@ -83,19 +83,6 @@ main {
   transition: font-size 2s;
 }
 
-.record {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 0;
-  font-size: 1.1em;
-}
-
-.record span {
-  padding-top: 10px;
-  font-size: 1.2em;
-}
-
 #next-btn {
   margin: 0 auto 20px auto;
   width: 50%;
@@ -248,4 +235,42 @@ input {
 }
 .wrong {
   background-color: #e63946;
+}
+
+.record {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 1.1em;
+
+  animation: PULSE 1.25s infinite;
+}
+
+.record span {
+  padding-top: 10px;
+  font-size: 1.3em;
+}
+
+@keyframes PULSE {
+  0% {
+    color: #56cfe1;
+  }
+  110% {
+    color: #7400b8;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info span {
+  padding: 10px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #ff6b6b;
 }
