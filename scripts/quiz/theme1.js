@@ -31,38 +31,31 @@ let scoresArr = [];
 let tableBody = document.querySelector("tbody");
 let usersList2 = JSON.parse(localStorage.getItem("quizScores")) || [];
 
+console.log(questions)
 
-// function shuffle(array) {
-//     var currentIndex = array.length, temporaryValue, randomIndex;
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
   
-//     // While there remain elements to shuffle...
-//     while (0 !== currentIndex) {
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
   
-//       // Pick a remaining element...
-//       randomIndex = Math.floor(Math.random() * currentIndex);
-//       currentIndex -= 1;
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
   
-//       // And swap it with the current element.
-//       temporaryValue = array[currentIndex];
-//       array[currentIndex] = array[randomIndex];
-//       array[randomIndex] = temporaryValue;
-//     }
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
   
-//     return array;
-// }
-// console.log(theme1Btn)
-
-// function showTheme1Questions() {
-
-// }
+    return array;
+}
 
 fetch("../../1themeQuestions.json")
 .then((response) => response.json())
 .then((data) => {
     questions.push(...data);
-
-    // questions.push(shuffle(data));
-    // console.log(shuffle(data))
 });
 
 
@@ -71,6 +64,7 @@ fetch("../../1themeQuestions.json")
 // Functions
 function startGame() {
     showTimer();
+    shuffle(questions);
     introText.classList.add('hide')
     startBtn.classList.add("hide");
     saveBtn.classList.add("hide");
