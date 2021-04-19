@@ -80,6 +80,11 @@ main .wrapper {
   background-color: #ffe66d;
 }
 
+.start__btn:hover .start__btn-span {
+  padding-top: 10px;
+  display: flex;
+}
+
 .start__btn:focus {
   outline: none;
   opacity: 0.65;
@@ -88,4 +93,8 @@ main .wrapper {
 .start__btn span {
   padding-top: 5px;
   font-size: var(--buttons-small-text);
+}
+
+.hide {
+  display: none;
 }
