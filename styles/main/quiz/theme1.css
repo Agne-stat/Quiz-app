@@ -222,6 +222,12 @@ input {
   background-color: #ffe66d;
 }
 
+.low-score {
+  padding: 30px 0 10px 0;
+  font-size: 1.4em;
+  color: #ff6b6b;
+}
+
 .hide {
   display: none;
 }

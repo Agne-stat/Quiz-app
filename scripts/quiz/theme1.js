@@ -161,6 +161,9 @@ function selectAnswer(e) {
         resultElement.classList.remove('hide');
         resultElement.innerText = `Correct answers: ${score} from ${questions.length} questions`;
         showRecord();
+        if(score < 2) {
+            document.querySelector('.low-score').classList.remove('hide')
+        }
     }
 
     for (btn of btns) {
@@ -169,8 +172,6 @@ function selectAnswer(e) {
 
     // // Progress 
     progressBar.style.width = `${(questionNumber / questions.length) * 100}%`;
-
-
 
 }
 
