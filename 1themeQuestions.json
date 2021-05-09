@@ -152,7 +152,7 @@
       ]
     },
     {
-      "question": "Which of these elements are all <table> elements?",
+      "question": "Which of these elements are all table elements?",
       "answers": [
         {
           "text": "<thead> <body> <tr>",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "question": "An <iframe> is used to display a web page within a web page.",
+      "question": "An 'iframe' is used to display a web page within a web page.",
       "answers": [
         {
           "text": "There is no such thing as an <iframe>",
