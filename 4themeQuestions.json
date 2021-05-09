@@ -29,7 +29,7 @@
         },
         {
           "text": "shouldComponentUpdate",
-          "correct": false
+          "correct": true
         },
         {
           "text": "componentDidUpdate",
@@ -37,7 +37,7 @@
         },
         {
           "text": "componentDidMount",
-          "correct": true
+          "correct": false
         }
       ]
     },
@@ -71,7 +71,7 @@
         },
         {
           "text": "componentDidMount",
-          "correct": false
+          "correct": true
         },
         {
           "text": "componentMounted",
@@ -79,7 +79,7 @@
         },
         {
           "text": "componentUpdated",
-          "correct": true
+          "correct": false
         }
       ]
     },
@@ -117,11 +117,11 @@
         },
         {
           "text": "Stack overflow error",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Nothing happens",
-          "correct": true
+          "correct": false
         }
       ]
     },
@@ -134,7 +134,7 @@
         },
         {
           "text": "An internal data store (object) of a component.",
-          "correct": false
+          "correct": true
         }
       ]
     },
@@ -151,7 +151,7 @@
         },
         {
           "text": "Library for building interaction interfaces",
-          "correct": false
+          "correct": true
         }
       ]
     },
@@ -160,32 +160,11 @@
       "answers": [
         {
           "text": "state & props",
-          "correct": false
+          "correct": true
         },
         {
           "text": "services & components",
           "correct": false
-        }
-      ]
-    },
-    {
-      "question": "What disadvantages does ReactJS have?",
-      "answers": [
-        {
-          "text": "It is only a view layer. You have to plug your code for Ajax requests, events and so on.",
-          "correct": false
-        },
-        {
-          "text": "The library is pretty large.",
-          "correct": false
-        },
-        {
-          "text": "The learning curve can be slow.",
-          "correct": false
-        },
-        {
-          "text": "All of the above options",
-          "correct": true
         }
       ]
     },
@@ -211,7 +190,7 @@
         },
         {
           "text": "Props",
-          "correct": false
+          "correct": true
         },
         {
           "text": "Elements",
@@ -219,7 +198,7 @@
         },
         {
           "text": "Ref",
-          "correct": true
+          "correct": false
         }
       ]
     },
@@ -232,7 +211,7 @@
         },
         {
           "text": "render()",
-          "correct": false
+          "correct": true
         },
         {
           "text": "reduce()",
@@ -240,49 +219,7 @@
         },
         {
           "text": "refer()",
-          "correct": true
-        }
-      ]
-    },
-    {
-      "question": "2. Inside which HTML element do we put the JavaScript?",
-      "answers": [
-        {
-          "text": "<scripting>",
           "correct": false
-        },
-        {
-          "text": "<javascript>",
-          "correct": false
-        },
-        {
-          "text": "<js>",
-          "correct": false
-        },
-        {
-          "text": "<script>",
-          "correct": true
-        }
-      ]
-    },
-    {
-      "question": "2. Inside which HTML element do we put the JavaScript?",
-      "answers": [
-        {
-          "text": "<scripting>",
-          "correct": false
-        },
-        {
-          "text": "<javascript>",
-          "correct": false
-        },
-        {
-          "text": "<js>",
-          "correct": false
-        },
-        {
-          "text": "<script>",
-          "correct": true
         }
       ]
     }

@@ -340,3 +340,18 @@ input {
 .answer_userWrong {
   color: #ff6b6b;
 }
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  #start-btn {
+    width: 30%;
+  }
+
+  .quiz {
+    margin: 0 200px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+}
