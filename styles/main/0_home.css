@@ -1,29 +1,3 @@
-/* Variables */
-:root {
-  /* Colors*/
-  --primary-color: #f3cf30;
-  --secondary-color: #ed7e31;
-  --buttons-color: #f4f4f4;
-
-  --light-color: #fff;
-  --dark-color: #333;
-
-  --text-color: #222;
-  --icon-color: #515;
-
-  --corrent: #52a04a;
-  --wrong: #b63333;
-
-  /* Sizes*/
-  --questions-text: 1.2rem;
-  --answers-text: 1rem;
-
-  --buttons-large-text: 1.3rem;
-  --buttons-small-text: 1rem;
-
-  --small-text: 0.9rem;
-}
-
 /* Mobile first */
 
 body {

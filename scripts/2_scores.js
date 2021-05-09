@@ -22,7 +22,9 @@ let usersList = JSON.parse(localStorage.getItem("quizScores")) || [];
 showUsers(usersList, tableBody);
 
 function showUsers(usersArray, output) {
+    // shorting by score
     usersArray.sort((a,b) => {
+      // comparing by time
         if(a.score === b.score) {
             var x = a.time,
               y = b.time;
@@ -51,6 +53,5 @@ function showUsers(usersArray, output) {
 // footer date
 document.querySelector("#current-year").innerHTML = new Date().getFullYear();
 
-// Events
 
 

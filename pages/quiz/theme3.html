@@ -39,12 +39,13 @@
         <div class="wrapper">
             <div class="container">
                 <div class="container__text">
-                    <h1>Are you ready?</h1>
+                    <h1>ARE YOU READY?</h1>
                     <p class="info">Find out how well you know <span>Node.js</span></p>
                     <button id="start-btn" class="btn start-btn">START</button>
                 </div>
                 <div class="quiz">
-                    <div id="quiz__question" class="hide">
+
+                    <div id="quiz__question" class="quiz__question hide">
                         <div id="question"></div>
                         <div id="answers-btns">
                         </div>
@@ -52,6 +53,7 @@
 
                     <div class="quiz__controls">
                         <p class="record hide">Congratulations !!! <span> Score record</span></p>
+                        <p class="low-score hide">Don‘t worry, next time you‘ll do better!</p>
                         <button id="next-btn" class="btn next-btn hide">Next</button>
                         <div class="time"></div>
                         <p id="result" class="hide">aaa</p>
@@ -71,6 +73,15 @@
                                 <input class="btn submit-btn" id="submit" type="submit">
                             </div>
                         </form>
+
+                        <!-- Show right answers -->
+                        <div class="answ-container ">
+                            <button class="right-answ hide">Teisingi atsakymai</button>
+                            <div>
+                                <div class="right-answ_score"></div>
+                                <div class="question-data"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

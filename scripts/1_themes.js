@@ -23,6 +23,7 @@ function getMaxScores() {
     newArr3.sort((a,b) => b.score-a.score);
     newArr4.sort((a,b) => b.score-a.score);
 
+    // showing max score
     if (!newArr1[0].score) {
         theme1Info.innerHTML = `There is no score`
     } else {
