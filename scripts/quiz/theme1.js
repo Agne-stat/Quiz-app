@@ -278,7 +278,7 @@ function showCorrectAnsw() {
 
     rightAnswScore.innerText = `Correct answers: ${score}`;
     
-
+    // to take array of exact same questions order as it was
     let arr = questions;
     console.log(questions.question)
 
